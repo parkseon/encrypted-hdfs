@@ -1,14 +1,12 @@
-package kr.ac.cnu.networks;
+package kr.ac.cnu.networks.hadoop.crypto;
 
-import org.apache.hadoop.conf.Configuration;
-import org.apache.hadoop.io.compress.Compressor;
+import org.apache.hadoop.io.compress.Decompressor;
 
 import java.io.IOException;
 
-public class AesDummyCompressor implements Compressor {
-
+public class BasicDummyDecompressor implements Decompressor {
     @Override
-    public int compress(byte[] b, int off, int len) throws IOException {
+    public int decompress(byte[] b, int off, int len) throws IOException {
         throw new UnsupportedOperationException();
     }
 
@@ -18,27 +16,22 @@ public class AesDummyCompressor implements Compressor {
     }
 
     @Override
-    public void finish() {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
     public boolean finished() {
         throw new UnsupportedOperationException();
     }
 
     @Override
-    public long getBytesRead() {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public long getBytesWritten() {
+    public boolean needsDictionary() {
         throw new UnsupportedOperationException();
     }
 
     @Override
     public boolean needsInput() {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public int getRemaining() {
         throw new UnsupportedOperationException();
     }
 
@@ -56,10 +49,4 @@ public class AesDummyCompressor implements Compressor {
     public void setInput(byte[] b, int off, int len) {
         throw new UnsupportedOperationException();
     }
-
-    @Override
-    public void reinit(Configuration conf) {
-        // do nothing
-    }
-
 }
