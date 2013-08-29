@@ -1,7 +1,7 @@
 Encrypted-HDFS
 ==============
 
-Seonyoung Park(https://sites.google.com/a/networks.cnu.ac.kr/dnlab/members/seonyoung-park) and Youngseok Lee(https://sites.google.com/a/networks.cnu.ac.kr/dnlab/members/yslee)
+[Seonyoung Park](https://sites.google.com/a/networks.cnu.ac.kr/dnlab/members/seonyoung-park) and [Youngseok Lee](https://sites.google.com/a/networks.cnu.ac.kr/dnlab/members/yslee)
 
 
 ## About 
